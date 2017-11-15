@@ -1,0 +1,7 @@
+/*banner*/
+#banner{width:100%;}
+#banner_box li{float: left;}
+#banner_box li img{width:100%;height:420px}
+#test{
+	height:500px;
+}

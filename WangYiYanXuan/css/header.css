@@ -1,0 +1,252 @@
+#top {
+  height: 40px;
+  background: #333333;
+  border-top: 1px splid #b6b4b6; }
+  #top #top_con {
+    padding-top: 12px; }
+    #top #top_con .top_slogan {
+      color: #cccccc; }
+      #top #top_con .top_slogan:hover {
+        color: #fff; }
+    #top #top_con .top_nav {
+      height: 28px; }
+      #top #top_con .top_nav li {
+        height: 28px; }
+        #top #top_con .top_nav li a {
+          color: #ccc;
+          padding: 0 9px;
+          display: block;
+          border-right: 1px solid #5c5c5c; }
+          #top #top_con .top_nav li a:hover {
+            color: #fff; }
+        #top #top_con .top_nav li .top_con_login {
+          border-right: 0; }
+      #top #top_con .top_nav .top_nav_last {
+        position: relative; }
+        #top #top_con .top_nav .top_nav_last a {
+          border-right: 0; }
+        #top #top_con .top_nav .top_nav_last img {
+          position: absolute;
+          right: 0;
+          top: 28px;
+          display: none; }
+
+.top_nav_last a i {
+  font-size: 12px !important;
+  color: #fff;
+  display: block;
+  padding-right: 9px; }
+
+#kefuLi .kefu i {
+  font-size: 12px !important;
+  color: #ccc;
+  display: block;
+  padding-left: 9px; }
+
+#top #top_con .top_nav #kefuLi {
+  position: relative; }
+
+#top #top_con .top_nav #kefuLi ul.kefu_erji {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  box-shadow: 0.5px 0.5px 0.5px 1px #ccc;
+  float: none;
+  clear: both;
+  text-align: center; }
+  #top #top_con .top_nav #kefuLi ul.kefu_erji li {
+    float: none; }
+    #top #top_con .top_nav #kefuLi ul.kefu_erji li a {
+      display: block;
+      width: 50px;
+      height: 33px;
+      float: none;
+      padding: 0;
+      margin: 0 18px;
+      line-height: 30px;
+      color: #ccc;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      border-right: 0; }
+      #top #top_con .top_nav #kefuLi ul.kefu_erji li a:hover {
+        color: #A88049; }
+  #top #top_con .top_nav #kefuLi ul.kefu_erji li:last-child a {
+    border-bottom: 0; }
+
+#logo_con {
+  height: 160px;
+  padding-top: 50px; }
+  #logo_con .logo_left {
+    display: block;
+    float: left;
+    margin-left: 458px; }
+  #logo_con .logo_right {
+    float: right;
+    padding-top: 75px;
+    position: relative; }
+    #logo_con .logo_right input {
+      border: 0;
+      border-bottom: 1px solid #d8cebc;
+      width: 252px;
+      height: 21px;
+      padding-left: 11px;
+      outline: none; }
+    #logo_con .logo_right a i {
+      font-size: 20px !important;
+      color: #b8a680; }
+    #logo_con .logo_right .logo_cart i {
+      margin-left: 18px;
+      position: relative; }
+      #logo_con .logo_right .logo_cart i .cart_count {
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+        background: #d4282d;
+        color: #fcffdd;
+        position: absolute;
+        left: 15px;
+        top: -9px;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center; }
+
+.logo_right_history {
+  display: none;
+  width: 260px;
+  position: absolute;
+  left: 0;
+  top: 103px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #333333;
+  box-shadow: 0.5px 0.5px 0.5px 1px #ccc;
+  border-top: 0;
+  background: #fff;
+  z-index: 2; }
+  .logo_right_history .logo_right_title {
+    color: #999999;
+    padding-right: 5px; }
+    .logo_right_history .logo_right_title .logo_Right_delBtn {
+      float: right;
+      font-size: 14px !important; }
+  .logo_right_history .history {
+    padding-right: 5px; }
+    .logo_right_history .history .icon-chuyidong {
+      float: right; }
+
+#nav_con {
+  height: 44px; }
+  #nav_con .nav_ul {
+    position: relative;
+    float: none;
+    height: 44px; }
+    #nav_con .nav_ul > li {
+      float: left;
+      height: 44px; }
+      #nav_con .nav_ul > li > a {
+        display: block;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 0 26px;
+        height: 20px;
+        line-height: 20px;
+        float: left; }
+      #nav_con .nav_ul > li ul {
+        display: none; }
+
+.nav_ul > li > ul {
+  width: 100%;
+  min-height: 100px;
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 0; }
+  .nav_ul > li > ul li {
+    float: left;
+    margin: 15px 0; }
+    .nav_ul > li > ul li a {
+      float: left;
+      display: block;
+      margin: 0 45px;
+      width: 60px;
+      text-align: center; }
+      .nav_ul > li > ul li a i {
+        display: block;
+        font-size: 38px !important;
+        color: #b4a078; }
+      .nav_ul > li > ul li a span {
+        display: block;
+        font-size: 12px;
+        color: #333333; }
+
+.nav_bg {
+  position: absolute; }
+
+#besideR {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  width: 72px; }
+  #besideR .ceBian {
+    width: 100%; }
+  #besideR div {
+    width: 100%;
+    height: 80px;
+    background: #fff; }
+    #besideR div a {
+      display: block;
+      text-align: center;
+      color: #666666;
+      width: 60px;
+      border-bottom: 1px solid #f5f5f5;
+      margin: 0 6px; }
+      #besideR div a i {
+        font-size: 30px !important;
+        padding-top: 14px;
+        display: block; }
+      #besideR div a span {
+        display: block;
+        font-size: 12px;
+        line-height: 31px;
+        height: 31px; }
+  #besideR .gift {
+    border-top: 1px solid #f5f5f5; }
+  #besideR .app {
+    position: relative; }
+    #besideR .app img {
+      display: none;
+      position: absolute;
+      right: 72px;
+      top: -65px; }
+  #besideR .backTop {
+    height: 50px;
+    display: none; }
+
+.f12, #top #top_con .top_slogan, #top #top_con .top_nav li a, #top #top_con .top_nav #kefuLi ul.kefu_erji li a {
+  font-size: 12px; }
+
+.wPerctent, #header, #top, #logo, #nav, #top #top_con .top_nav #kefuLi ul.kefu_erji {
+  width: 100%; }
+
+.wCon {
+  width: 1090px; }
+
+.fl, #top #top_con .top_slogan, #top #top_con .top_nav li, #top #top_con .top_nav li a, .top_nav_last a i {
+  float: left; }
+
+.fr, #top #top_con .top_nav, #kefuLi .kefu i {
+  float: right; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.c, #top #top_con, #logo_con, #nav_con {
+  width: 1090px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=header.css.map */
