@@ -187,7 +187,9 @@
     }
 }
 
-
+#nav{
+    background: #fff;
+}
 //nav
 #nav_con{
     height:44px;
@@ -256,6 +258,7 @@
     right:0;
     top:150px;
     width:72px;
+    z-index: 100;
     .ceBian{
         width:100%;
     }
@@ -296,7 +299,7 @@
         }
     }
     .backTop{
-        height: 50px;
+        height: 80px;
         display: none;
     }
 }

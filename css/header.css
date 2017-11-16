@@ -135,6 +135,9 @@
     .logo_right_history .history .icon-chuyidong {
       float: right; }
 
+#nav {
+  background: #fff; }
+
 #nav_con {
   height: 44px; }
   #nav_con .nav_ul {
@@ -188,7 +191,8 @@
   position: fixed;
   right: 0;
   top: 150px;
-  width: 72px; }
+  width: 72px;
+  z-index: 100; }
   #besideR .ceBian {
     width: 100%; }
   #besideR div {
@@ -221,7 +225,7 @@
       right: 72px;
       top: -65px; }
   #besideR .backTop {
-    height: 50px;
+    height: 80px;
     display: none; }
 
 .f12, #top #top_con .top_slogan, #top #top_con .top_nav li a, #top #top_con .top_nav #kefuLi ul.kefu_erji li a {

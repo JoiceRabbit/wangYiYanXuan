@@ -4,6 +4,7 @@ h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100;}
 body{font-family:"微软雅黑";}
 ul,ol,li{list-style:none;}
 a,u{text-decoration: none;}
+a{color: #333;}
 i,em{font-style:normal;}
 b,strong{font-weight:100;}
 img{display:block;border:0;}

@@ -59,12 +59,18 @@ if(historyArr.length > 0){
 //导航条的二级导航的显示隐藏
 $("#nav_con .nav_ul>li").hover(function(){
 	//给二级菜单加一个白色的背景div,,宽度同屏幕
+	var _top = 0
+	if($("#nav").css("position") == "fixed"){
+		_top =  $("#nav").outerHeight();
+	}else{
+		_top = $("#nav").offset().top + $("#nav").outerHeight();
+	}
 	$(".nav_bg").css({
 		"height":$(this).find("ul").height(),
 		"width" : "100%",
 		"background" : "#fff",
 		"left" : 0,
-		"top" : $("#nav").offset().top + $("#nav").outerHeight()
+		"top" : _top
 	}).show();
 	
 	$(this).find("ul").css("z-index","10").show(); 
@@ -87,7 +93,7 @@ $("#nav_con .nav_ul>li").hover(function(){
 
 $(".nav_ul>li:eq(11)>a").css("border-left","1px solid #cccccc");
 
-$("#nav_con a,span").hover(function(){
+$("#nav_con a,#nav_con span").hover(function(){
 	$(this).css({"color":"#b4a078"});
 },function(){
 	$(this).css({"color":"#000"});
@@ -125,6 +131,14 @@ $(window).scroll(function(){
 		})
 	}else{
 		$(".backTop").hide();
+	}
+	
+	//导航吸顶
+	
+	if(sTop >250){
+		$("#nav").css({"position":"fixed","top":0})
+	}else{
+		$("#nav").css("position","");	
 	}
 	
 	/*//侧边栏定位
