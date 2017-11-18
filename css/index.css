@@ -18,29 +18,74 @@
 
 
 /*品牌制造商*/
-#pinpai{margin:30px;height:368px;}
+#pinpai{margin-top:30px;height:368px;}
 #pinpai_con{width:1090px;margin: 0 auto;position: relative;}
-#pinpai_header{height: 48px;padding-bottom:20px ;}
+#pinpai_header{height: 28px;padding-bottom:20px ;}
 .pinpai_header_l{float: left;}
-.pinpai_header_l .name{font-size: 28px;font-weight: 900;line-height: 1;float: left;margin-right: 20px;color:#333333;}
+.name{font-size: 28px;font-weight: 900;line-height: 1;float: left;margin-right: 20px;}
 .pinpai_header_l .frontName{padding-top:13px;line-height: 1;font-size: 14px;display: inline-block;}
 .pinpai_header_r{display: inline-block;line-height: 1;margin-left:30px;padding-top:14px;font-size: 14px ;float: right;color: #333;}
 #pinpai_bottom{padding-bottom: 20px;}
 #pinpai_bottom .ppb1{width:357px;float: left;;margin-right: 12px;position: relative;height: 320px;}
-.ppb1 .mask{position: absolute;left: 0;top: 0;background: #ccc;width:100%;height:320px;opacity: .3;z-index: 2;}
-.ppb1 .name{margin-left: 100px;margin-bottom: 20px;height:29px;margin-top: 50px;}
+.ppb1 .mask{position: absolute;left: 0;top: 0;width:100%;height:320px;z-index: 2;}
+.ppb1 .name{position:absolute;left: 100px;top: 50px;height:29px;z-index: 3;}
 .ppb1 .name span:first-of-type{font-size: 22px;color: #333;float: left;}
-.ppb1 .name span:last-of-type{font-size: 12px;color:#fff;width:30px;height:15px;background: red;opacity: .5;border-radius: 5px;margin-bottom: 13px;float: left;}
-.ppb1 .price{clear: left;margin-left: auto ;margin-right: auto;font-size: 14px;color: #333;height:54px;line-height: 54px;width:45px;border-top: 1px solid #333;}
-.ppImg{position: absolute;left: 0;top: 0;}
-.ppImg img{text-align: center;z-index: 1;opacity: .5;transition: 1s}
+.ppb1 .name span:last-of-type{font-size: 12px;color:#fff;width:30px;height:15px;background: rgba(255,0,0,.5);border-radius: 5px;margin-bottom: 13px;float: left;}
+.ppb1 .price{clear: left;position:absolute;left:156px;top:99px;font-size: 14px;color: #333;height:54px;line-height: 54px;width:45px;border-top: 1px solid #333;z-index: 3;}
+.ppImg img{text-align: center;transition: 1s;position: absolute;left: 0;top: 0;z-index: 1;z-index: 1;}
 .ppb3{width:351px;height: 155px;position: relative;float: left;}
-.ppb3 .mask{position: absolute;left: 0;top: 0;background: #ccc;width:100%;height:155px;opacity: .3;z-index: 2;}
-.ppb3 .name{position: absolute;left: 20px;top: 32px;}
+.ppb3 .mask{position: absolute;left: 0;top: 0;width:100%;height:155px;z-index: 2;}
+.ppb3 .name{position: absolute;left: 20px;top: 32px;z-index: 3;}
 .ppb3 .name span:first-of-type{font-size: 20px;color: #333;float: left;}
-.ppb3 .name span:last-of-type{font-size: 12px;color:#fff;width:30px;height:15px;background: red;opacity: .5;border-radius: 5px;margin-bottom: 13px;float: left;}
-.ppb3 .price{font-size: 14px;color: #333;height:50px;line-height: 50px;width:45px;border-top: 1px solid #333;position: absolute;top: 65px;left: 20px;}
+.ppb3 .name span:last-of-type{font-size: 12px;color:#fff;width:30px;height:15px;background: rgba(255,0,0,.5);border-radius: 5px;margin-bottom: 13px;float: left;}
+.ppb3 .price{font-size: 14px;color: #333;height:50px;line-height: 50px;width:45px;border-top: 1px solid #333;position: absolute;top: 65px;left: 20px;z-index: 3;}
 #pinpai_bottom .p3{margin-bottom: 10px;}
 #pinpai_bottom a{overflow: hidden;}
-#pinpai_header a:hover{color:#b4a078}
-.pinpai_header_l h3:hover{color:#b4a078}
+a.pinpai_header_r:hover{color:#b4a078}
+h3.name:hover{color:#b4a078}
+
+
+
+/*新品首发*/
+#newPro_con{width:1090px;height: 510px;padding-top: 60px;margin:0 auto;}
+#newPro_header{height: 28px;padding-bottom:20px ;}
+#newPro_bottom{position: relative;height: 344px;} 
+.newPro_list{height: 344px;}   
+.newPro_list_box{margin-right: 10px;height: 344px;}
+.newPro_btnL{position: absolute;left: -60px;top:100px;width:50px;height: 50px;border-radius: 25px;background: #E7E2D7;}
+.newPro_btnL i{font-size: 46px!important;color: #fff;}
+.newPro_btnR{position: absolute;right: -60px;top:100px;width:50px;height: 50px;border-radius: 25px;background: #E7E2D7;}
+.newPro_btnL:hover{background: #AD782F;}
+.newPro_btnR:hover{background: #AD782F;}
+.newPro_btnR i{font-size: 48px!important;color: #fff;}
+.newPro_products{overflow: hidden;width:1100px;height: 342px;}
+.newPro_pro{float:left;width:265px;margin-right: 10px;position: relative;}
+.newPro_hd{width: 265px;height: 265px;margin-bottom: 8px;}
+.newPro_hd img{width:100%,height:100%;}
+.newPro_second{display: none;}
+.newPro_bd{position: relative;}
+.newPro_bd_bg{background:rgba(172,159,159,.3);width:265px;height:79px;position: absolute;top:-8px;left: 0;display: none;}
+.colorNum{position: absolute;left: 10px;top: 10px;height:20px;font-size: 12px;color: #A7936E;border: 1px solid #B3A07D;border-radius: 5px;padding: 0 4px;line-height: 18px;background-color: #F4F0EA ;}
+.newPro_tags{height: 20px;font-size: 0;color: #FFF;width: 200px;margin:0 auto 3px;overflow: hidden;text-align: center;}
+.newPro_hot{display: inline-block;height: 20px;line-height: 20px;color: #fff;padding: 0 5px;font-size: 12px;background-color: #F28F2D ;}
+.newPro_benefit{display: inline-block;height: 20px;line-height: 20px;color: #fff;padding: 0 5px;font-size: 12px;background-color: #E36844;margin-left: 6px;}
+.newPro_name{font-size:13px;padding:0 10px;margin-bottom: 4px;line-height: 20px;height: 20px;white-space: nowrap;font-weight: 900;text-align: center;}
+.newPro_price{padding-bottom: 9px;color: #D4282D;font-size: 13px;line-height: 13px;text-align: center;}
+.newPro_manufac{padding-left: 10px;border-left: 1px solid #999;color: #999;margin-left: 7px;line-height: 13px;font-size: 13px;}
+
+
+
+/*人气推荐*/
+#recommend{padding:60px 0;background: #F4F0EA;}
+#re_con{width:1090px;margin:0 auto;position: relative;}
+.re_header{padding-bottom: 20px;}
+.re_header_l{float: left;line-height: 1;}
+.re_header_menu{float: left;overflow: hidden;padding-left: 13px;}
+.re_header_menu .item{float: left;text-align: center;font-size: 14px;width: 70px;height: 28px;line-height: 28px;margin-right: 55px;}
+.re_header_menu .tab-sel{color:#B4A078;border-bottom: 2px solid #B4A078;height: 26px;line-height: 26px;}
+
+.re_pro{line-height: 1;text-align: center;font-size: 13px;widows: 245px;height: 361px;position: relative;}
+.popular{}
+.m-popular{background: #fff;overflow: hidden;width: 233px;height: 260px;float: left;margin-left: 10px;text-align: center;}
+.down{margin-top:10px}
+.re_box_top{margin-bottom: 18px;border-bottom: 1px solid #F4F0EA;}
