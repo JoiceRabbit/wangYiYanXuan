@@ -78,14 +78,19 @@ h3.name:hover{color:#b4a078}
 /*人气推荐*/
 #recommend{padding:60px 0;background: #F4F0EA;}
 #re_con{width:1090px;margin:0 auto;position: relative;}
-.re_header{padding-bottom: 20px;}
+.re_header{padding-bottom: 20px;height: 28px;}
 .re_header_l{float: left;line-height: 1;}
 .re_header_menu{float: left;overflow: hidden;padding-left: 13px;}
 .re_header_menu .item{float: left;text-align: center;font-size: 14px;width: 70px;height: 28px;line-height: 28px;margin-right: 55px;}
 .re_header_menu .tab-sel{color:#B4A078;border-bottom: 2px solid #B4A078;height: 26px;line-height: 26px;}
 
-.re_pro{line-height: 1;text-align: center;font-size: 13px;widows: 245px;height: 361px;position: relative;}
-.popular{}
-.m-popular{background: #fff;overflow: hidden;width: 233px;height: 260px;float: left;margin-left: 10px;text-align: center;}
+.re_bottom{height: 530px;}
+.re_pro{line-height: 1;text-align: center;font-size: 13px;width: 245px;height: 361px;position: relative;}
+.m-popular{background: #fff;overflow: hidden;width: 223px;height: 260px;float: left;margin-left: 10px;text-align: center;}
+.m-popular:first-of-type{width: 390px;height: 530px;margin-left: 0;}
 .down{margin-top:10px}
-.re_box_top{margin-bottom: 18px;border-bottom: 1px solid #F4F0EA;}
+.m-popular:first-of-type .re_box_top{margin-bottom: 18px;}
+.re_box_top{margin-bottom: 8px;border-bottom: 1px solid #F4F0EA;position: relative;overflow: hidden;}
+.m-popular .re_box_top img{width: 180px;height: 180px;display: block;transition:1s;margin:0 auto;border:1px solid transparent}
+.m-popular:first-of-type .re_box_top img{width: 320px;height: 320px;margin:40px 35px ;}
+.m-popular:first-of-type .newPro_name{margin-bottom: 13px;font-size: 18px;line-height: 18px;}

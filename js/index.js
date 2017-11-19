@@ -84,9 +84,9 @@ $(function(){
 		}
 		autoPlay();
 	})
+
 	
-	
-	//制造商部分的放缩
+	//品牌制造商部分的放缩
 	$("#pinpai .mask").hover(function(){
 		$(this).parent().find(".ppImg").find("img").css("transform","scale(1.1)");
 	},function(){
@@ -191,12 +191,94 @@ $(function(){
 			})
 		}
 	});
-
 	
 	/*<span class="newPro_manufac"><a href="#">Adidas制造商</a></span> 
 	<span class="newPro_hot">爆品</span> 
 	<span class="newPro_benefit">加价购</span>
 	<div class="colorNum"></div> */
+	
+	
+	//人气推荐部分  ajax实现选项卡
+	$.ajax({
+		type:"get",
+		url:"../json/recommend.json",
+		async:true,
+		success:function(res){
+			var json = res;    //json形式存储的数据      不同选项卡对应的数据对应一个数组
+			var type = "";
+			var str = "";
+			
+			autoPlay2("bianji");
+			$(".re_bottom").html(str);
+			
+			//选项卡
+			$(".re_header_menu .item").click(function(){
+				if($(this).index()){
+					type = "rexiao";
+				}else{
+					type = "bianji";
+				}
+				$(this).addClass("tab-sel").siblings().removeClass("tab-sel");
+				autoPlay2(type);
+				$(".re_bottom").html(str);
+			})
+			
+			//人气推荐部分的鼠标移入放缩
+			$(".re_bottom").on({
+				"mouseenter" : function(){
+					$(this).find("img").css("transform","scale(1.1)");
+				},
+				"mouseleave" : function(){
+					$(this).find("img").css("transform","scale(1)");
+				}
+			}
+			,".re_pro");
+			
+			function autoPlay2(type){
+				str = "";
+				var arr = json[type];
+				for(var i=0;i<arr.length;i++){
+					var product = arr[i];
+					if(i<4){
+						str += `<div class="re_pro popular m-popular">
+									<div class="re_box_top">
+										<a href="javascript:;" alt="${product.name}">
+											<div style="width: 100%;height: 100%;">
+												<img src="../images/recommend/${product.src}" alt="${product.name}" title="${product.name}"/>
+											</div>
+										</a>
+									</div>
+									<div class="re_box_bottom">
+										<div class="newPro_tags"></div>
+										<h4 class="newPro_name">
+											<a href="#" title="${product.name}">${product.name}</a>
+										</h4>
+										<span class="newPro_price">${product.price}</span>
+									</div>
+								</div>`;
+					}else{
+						str += `<div class="re_pro popular m-popular down">
+									<div class="re_box_top">
+										<a href="javascript:;" alt="${product.name}">
+											<div style="width: 100%;height: 100%;">
+												<img src="../images/recommend/${product.src}" alt="${product.name}" title="${product.name}"/>
+											</div>
+										</a>
+									</div>
+									<div class="re_box_bottom">
+										<div class="newPro_tags"></div>
+										<h4 class="newPro_name">
+											<a href="#" title="${product.name}">${product.name}</a>
+										</h4>
+										<span class="newPro_retailPrice">${product.price}</span>
+									</div>
+								</div>`;
+					}
+				}
+			}
+		}
+	});
+
 	
 });	
 	
