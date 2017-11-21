@@ -234,6 +234,14 @@ $(function(){
 			}
 			,".re_pro");
 			
+			//点击跳转详情页  product.html
+			$(".re_bottom").on("click",".re_pro",function(){
+				var id = $(this).find(".data").data("id");
+				var pname = $(this).find(".data").data("name");
+				var psort = $(this).find(".data").data("sort");
+				location.href = `product.html?pid=${id}&pname=${pname}&psort=${psort}`;
+			})
+			
 			function autoPlay2(type){
 				str = "";
 				var arr = json[type];
@@ -255,6 +263,7 @@ $(function(){
 										</h4>
 										<span class="newPro_price">${product.price}</span>
 									</div>
+									<span class="data" style="display:none" data-id =${product.id} data-name = ${product.name} data-sort = ${type}></span>
 								</div>`;
 					}else{
 						str += `<div class="re_pro popular m-popular down">
@@ -272,14 +281,100 @@ $(function(){
 										</h4>
 										<span class="newPro_retailPrice">${product.price}</span>
 									</div>
+									<span class="data" style="display:none" data-id =${product.id} data-name = ${product.name} data-sort = ${type}></span>
 								</div>`;
 					}
 				}
 			}
 		}
 	});
-
 	
+	
+	//限时购倒计时
+	var d = new Date().toLocaleDateString();
+	var end = new Date(d + " 22:00:00");
+	var start = new Date();
+	var t = (Date.parse(end) - Date.parse(start))/1000;
+	showTime();
+	
+	var timer1 = setInterval(function(){
+		t--;
+		if(t<=0){
+			$(".j-hour").html("00");
+			$(".j-minute").html("00");
+			$(".j-second").html("00");
+			clearInterval(timer1);
+		}else{
+			showTime();
+		}
+	},1000)
+	
+	function showTime(){
+		//剩余的小时数
+		var h = parseInt(t/3600);
+		//剩余的分钟数
+		var m = parseInt((t - h*3600)/60);
+		//剩余的分钟数
+		var s = parseInt(t - h*3600 - m*60);
+		
+		$(".j-hour").html(h);
+		$(".j-minute").html(m);
+		$(".j-second").html(s);
+	}
+	
+	
+	
+	//类别
+	$.ajax({
+		type:"get",
+		url:"../json/indexCates.json",
+		async:true,
+		success : function(res){
+			var str = "";
+			var json = res;
+			for(var attr in json){
+				str = "";
+				for(var i=1;i<json[attr].length;i++){
+					var product = json[attr][i];
+					str += `<li class="item">
+								<div class="newPro_pro">        
+									<div class="newPro_hd hd">
+										<a href="#" title="${product.name}" > 
+											<div class="newPro_first">
+												<img src="../images/${product.src}" alt="#" class="picItem"/>
+											</div>
+										</a>
+									</div>
+									<div class="newPro_bd">
+										<div class="newPro_tags"></div>
+										<h4 class="newPro_name">
+											<a href="#" title="${product.name}">${product.name}</a>
+										</h4>
+										<p class="newPro_price">
+											<span class="newPro_retailPrice indexPrice">${product.price}</span>
+										</p>
+									</div>
+								</div>
+							</li>`;
+				}
+				if(attr == "jujia"){
+					$(".jujia .bd .itemList").html(str);
+					$(".jujia .banner a div").html(`<img src="../images/${json[attr][0].src}" alt="#" />`);
+				}
+				if(attr == "kitchen"){
+					$(".kitchen .bd .itemList").html(str);
+					$(".kitchen .banner a div").html(`<img src="../images/${json[attr][0].src}" alt="#" />`);
+				}
+			}
+			
+			//分类展示部分的放缩
+			$("#indexCates .bd .item").hover(function(){
+				$(this).find("img").css("transform","scale(1.1)");
+			},function(){
+				$(this).find("img").css("transform","scale(1)");
+			})
+		}
+	})
 });	
 	
 	

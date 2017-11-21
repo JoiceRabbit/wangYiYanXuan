@@ -5,10 +5,12 @@
 		<title>网易严选</title>
 		<link rel="stylesheet" href="../css/common.css" />
 		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/foot.css" />
 		<link rel="stylesheet" href="../iconfont/iconfont.css" />
 		<link rel="stylesheet" href="../css/index.css" />
 	</head>
 	<body>
+		<!--top+搜索框+导航-->
 		<div id="header">
 			<div id="top">
 				<div id="top_con">
@@ -55,7 +57,7 @@
 					</a>
 					<div class="logo_right">
 						<input type="text" placeholder="选你所爱..."/>
-						<div class="logo_right_history">
+						<div class="logo_right_history" style="z-index: 30;">
 							   <!--删除历史记录 定位  点击-->
 							<div class="recent">
 								<p class="logo_right_title">最近搜索
@@ -748,6 +750,7 @@
 				<div class="nav_bg" style="z-index: 9;"></div>   <!--二级菜单的背景-->
 			</div>
 		</div>
+		<!--右侧边固定栏-->
 		<div id="besideR">
 			<a href="#">
 				<img src="../images/ceBian.gif" alt="#" class="ceBian"/>
@@ -778,6 +781,7 @@
 				</a>
 			</div>
 		</div>
+		<!--banner-->
 		<div id="banner">
 			<a href="#">  <!--可以直接用a标签加背景图来写，提示就是alt内容，，不需要再加span-->
 				<p class="banner_con_img" style="z-index: 7;"></p>
@@ -805,6 +809,7 @@
 				</div>
 			</div>
 		</div>
+		<!--品牌制造商-->
 		<div id="pinpai">
 			<div id="pinpai_con">
 				<div id="pinpai_header">
@@ -857,6 +862,7 @@
 				</div>
 			</div>
 		</div>
+		<!--新品首发-->
 		<div id="newPro">
 			<div id="newPro_con">
 				<div id="newPro_header">
@@ -908,6 +914,7 @@
 				</div>
 			</div>
 		</div>	
+		<!--人气推荐-->
 		<div id="recommend">
 			<div id="re_con">
 				<div class="re_header">
@@ -960,9 +967,561 @@
 				</div>
 			</div>
 		</div>	
-		<div style="height: 1300px;"></div>
+		<!--限时购-->
+		<div id="limited">
+			<div id="limited_con">
+				<div class="limited_con_box">
+					<div class="limited_hd">
+						<div class="f-left lh1">
+							<a href="javascript:;">
+								<h3 class="name">限时购</h3>
+							</a>
+						</div>
+						<div class="f-right lh1">
+							<a href="javascript:;" class="re_header_r pinpai_header_r">更多抢购></a>
+						</div>
+					</div>
+					<div class="limited_bd">
+						<div class="limited_bd_l">
+							<div class="screenHd">22点场</div>
+							<div class="line"></div>
+							<div class="screenEndTips">距离结束还剩</div>
+							<div class="m-countDown">
+								<span class="w-cd j-hour"></span>
+								<span class="colon">:</span>
+								<span class="w-cd j-minute"></span>
+								<span class="colon">:</span>
+								<span class="w-cd j-second"></span>
+							</div>
+							<span class="seeMoreBtn">查看全部&nbsp;</span>
+							<a href="javascript:;" class="link"></a>
+						</div>
+						<div class="limited_bd_r">
+							<section class="limited_pro limited_pro1">
+								<div class="lt">
+									<a href="javascript:;" class="picIn" title="安睡慢回弹记忆棉床垫">
+										<div style="width: 100%;height: 100%;">
+											<img src="../images/limited/02.png" class="pic" />
+										</div>
+									</a>
+								</div>
+								<div class="rt">
+									<h2 class="itemName">
+										<a href="javascript:;">安睡慢回弹记忆棉床垫</a>
+									</h2>
+									<p class="itemDes">5cm记忆棉的气密包裹</p>
+									<div class="itemNum">
+										<div class="numBar">
+											<div class="numBarIn" style="width: 136px;"></div>
+										</div>
+										<dis class="numTips">
+											<span>还剩</span>
+											<span>500</span>
+											<span>件</span>
+										</dis>
+									</div>
+									<div class="itemPrice">
+										<span class="aPrice">
+											<span>限时价</span>
+											<span class="yuan">￥</span>
+											<span class="aPriceIn">479</span>
+										</span>
+										<span class="oPrice">
+											<span>原价&nbsp;</span>
+											<span class="oPriceIn">
+												<span>￥</span>
+												<span>599</span>
+											</span>
+										</span>
+									</div>
+									<a href="javascript" class="w-btn tobuyBtn">立即抢购</a>
+								</div>
+							</section>
+							<section class="limited_pro limited_pro2">
+								<div class="lt">
+									<a href="javascript:;" class="picIn" title="安睡慢回弹记忆棉床垫">
+										<div style="width: 100%;height: 100%;">
+											<img src="../images/limited/03.jpg" class="pic" />
+										</div>
+									</a>
+								</div>
+								<div class="rt">
+									<h2 class="itemName">
+										<a href="javascript:;">安睡慢回弹记忆棉床垫</a>
+									</h2>
+									<p class="itemDes">5cm记忆棉的气密包裹</p>
+									<div class="itemNum">
+										<div class="numBar">
+											<div class="numBarIn" style="width: 136px;"></div>
+										</div>
+										<dis class="numTips">
+											<span>还剩</span>
+											<span>500</span>
+											<span>件</span>
+										</dis>
+									</div>
+									<div class="itemPrice">
+										<span class="aPrice">
+											<span>限时价</span>
+											<span class="yuan">￥</span>
+											<span class="aPriceIn">479</span>
+										</span>
+										<span class="oPrice">
+											<span>原价&nbsp;</span>
+											<span class="oPriceIn">
+												<span>￥</span>
+												<span>599</span>
+											</span>
+										</span>
+									</div>
+									<a href="javascript" class="w-btn tobuyBtn">立即抢购</a>
+								</div>
+							</section>
+							<section class="limited_pro limited_pro3">
+								<div class="lt">
+									<a href="javascript:;" class="picIn" title="安睡慢回弹记忆棉床垫">
+										<div style="width: 100%;height: 100%;">
+											<img src="../images/limited/04.png" class="pic" />
+										</div>
+									</a>
+								</div>
+								<div class="rt">
+									<h2 class="itemName">
+										<a href="javascript:;">安睡慢回弹记忆棉床垫</a>
+									</h2>
+									<p class="itemDes">5cm记忆棉的气密包裹</p>
+									<div class="itemNum">
+										<div class="numBar">
+											<div class="numBarIn" style="width: 136px;"></div>
+										</div>
+										<dis class="numTips">
+											<span>还剩</span>
+											<span>500</span>
+											<span>件</span>
+										</dis>
+									</div>
+									<div class="itemPrice">
+										<span class="aPrice">
+											<span>限时价</span>
+											<span class="yuan">￥</span>
+											<span class="aPriceIn">479</span>
+										</span>
+										<span class="oPrice">
+											<span>原价&nbsp;</span>
+											<span class="oPriceIn">
+												<span>￥</span>
+												<span>599</span>
+											</span>
+										</span>
+									</div>
+									<a href="javascript" class="w-btn tobuyBtn">立即抢购</a>
+								</div>
+							</section>
+							<section class="limited_pro limited_pro4">
+								<div class="lt">
+									<a href="javascript:;" class="picIn" title="安睡慢回弹记忆棉床垫">
+										<div style="width: 100%;height: 100%;">
+											<img src="../images/limited/05.png" class="pic" />
+										</div>
+									</a>
+								</div>
+								<div class="rt">
+									<h2 class="itemName">
+										<a href="javascript:;">安睡慢回弹记忆棉床垫</a>
+									</h2>
+									<p class="itemDes">5cm记忆棉的气密包裹</p>
+									<div class="itemNum">
+										<div class="numBar">
+											<div class="numBarIn" style="width: 136px;"></div>
+										</div>
+										<dis class="numTips">
+											<span>还剩</span>
+											<span>500</span>
+											<span>件</span>
+										</dis>
+									</div>
+									<div class="itemPrice">
+										<span class="aPrice">
+											<span>限时价</span>
+											<span class="yuan">￥</span>
+											<span class="aPriceIn">479</span>
+										</span>
+										<span class="oPrice">
+											<span>原价&nbsp;</span>
+											<span class="oPriceIn">
+												<span>￥</span>
+												<span>599</span>
+											</span>
+										</span>
+									</div>
+									<a href="javascript" class="w-btn tobuyBtn">立即抢购</a>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--福利社-->
+		<div id="benefit">
+			<div id="benefit_con">
+				<div class="benefit_con_hd">
+					<div class="f-left lh1">
+						<a href="javascript:;">
+							<h3 class="name">福利社</h3>
+						</a>
+					</div>
+					<div class="f-right lh1">
+						<a href="javascript:;" class="pinpai_header_r">更多优惠></a>
+					</div>
+				</div>
+				<div class="benefit_con_bd">
+					<a href="javascript:;" class="saleItem">
+						<div style="width: 100%;height: 100%;">
+							<img src="../images/benefit/01.png" alt="#"/>
+						</div>
+					</a>
+					<a href="javascript:;" class="saleItem">
+						<div style="width: 100%;height: 100%;">
+							<img src="../images/benefit/02.png" alt="#"/>
+						</div></a>
+					<a href="javascript:;" class="saleItem small">
+						<div style="width: 100%;height: 100%;">
+							<img src="../images/benefit/05.png" alt="#" class="bgPic"/>
+						</div>
+						<div style="width: 100%;height: 100%;">
+							<img src="../images/benefit/03.png" alt="#" class="itemPic"/>
+						</div>
+					</a>
+					<a href="javascript:;" class="saleItem small">
+						<div style="width: 100%;height: 100%;">
+							<img src="../images/benefit/06.png" alt="#" class="bgPic"/>
+						</div>
+						<div style="width: 100%;height: 100%;">
+							<img src="../images/benefit/04.png" alt="#" class="itemPic"/>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--所有分类-->
+		<div id="indexCates">   
+			<!--居家-->
+			<div class="g-row jujia">
+				<div class="indexCate">
+					<div class="commonHeader">
+						<div class="f-left lh1">
+							<a href="javascript:;">
+								<h3 class="name">居家</h3>
+							</a>
+							<span></span>
+						</div>
+						<div class="f-right lh1">
+							<div class="subCateList">
+								<span>
+									<a href="javascript:;" class="item">床品件套</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">被枕</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">家具</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">收纳</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">布艺家装</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">家饰</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">宠物</a>
+								</span>
+							</div>
+							<a href="javascript:;" class="pinpai_header_r">查看更多></a>
+						</div>
+					</div>
+					<div class="banner">
+						<a href="javascript:;" class="wrap" title="感恩被枕">
+							<div style="width: 100%;height: 100%;">
+								<!--<img src="../images/home/01big.jpg" alt="#" />-->
+							</div>
+						</a>
+					</div>
+					<div class="bd">
+						<ul class="itemList">
+							<!--一个产品-->
+							<!--<li class="item">
+								<div class="newPro_pro">        
+									<div class="newPro_hd hd">
+										<a href="#" title="超柔懒人沙发" > 
+											<div class="newPro_first">
+												<img src="../images/home/01.png" alt="#" class="picItem"/>
+											</div>
+										</a>
+									</div>
+									<div class="newPro_bd">
+										<div class="newPro_tags"></div>
+										<h4 class="newPro_name">
+											<a href="#" title="超柔懒人沙发">超柔懒人沙发</a>
+										</h4>
+										<p class="newPro_price">
+											<span class="newPro_retailPrice indexPrice">￥499.00</span>
+										</p>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--餐厨-->
+			<div class="g-row kitchen">
+				<div class="indexCate">
+					<div class="commonHeader">
+						<div class="f-left lh1">
+							<a href="javascript:;">
+								<h3 class="name">餐厨</h3>
+							</a>
+							<span></span>
+						</div>
+						<div class="f-right lh1">
+							<div class="subCateList">
+								<span>
+									<a href="javascript:;" class="item">床品件套</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">被枕</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">家具</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">收纳</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">布艺家装</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">家饰</a>
+								</span>
+								<span>
+									<b class="split">/</b>
+									<a href="javascript:;" class="item">宠物</a>
+								</span>
+							</div>
+							<a href="javascript:;" class="pinpai_header_r">查看更多></a>
+						</div>
+					</div>
+					<div class="banner">
+						<a href="javascript:;" class="wrap" title="感恩被枕">
+							<div style="width: 100%;height: 100%;">
+								<!--<img src="../images/kitchen/01big.jpg" alt="#" />-->
+							</div>
+						</a>
+					</div>
+					<div class="bd">
+						<ul class="itemList">
+							<!--一个产品    共4个-->
+							<!--<li class="item">
+								<div class="newPro_pro">        
+									<div class="newPro_hd hd">
+										<a href="#" title="超柔懒人沙发" > 
+											<div class="newPro_first">
+												<img src="../images/kitchen/01.png" alt="#" class="picItem"/>
+											</div>
+										</a>
+									</div>
+									<div class="newPro_bd">
+										<div class="newPro_tags"></div>
+										<h4 class="newPro_name">
+											<a href="#" title="超柔懒人沙发">超柔懒人沙发</a>
+										</h4>
+										<p class="newPro_price">
+											<span class="newPro_retailPrice">￥499.00</span>
+										</p>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--大家都在说--轮播-->
+		<!--<div id="allSay">
+			<div class="g-row">
+				<div id="allSayHeader newPro_header">
+					<div class="newPro_header_l pinpai_header_l">
+						<a href="#">
+							<h3 class="name">大家都在说</h3>
+						</a>
+						<p class="frontName">生活，没有统一的标准</p>
+					</div>
+					<a href="#" class="newPro_header_r pinpai_header_r"></a>
+				</div>
+				<div class="bd slickWidth">
+					<ul class="itemList">
+						<div id="itemList_box" class="itemList_box">
+							<div class="draggable">
+								<div class="listbox" style="">
+									<li class="pic" style="width: 367px;">
+										<div class="m-product">
+											<div class="hd">
+												<a href="#" title="超柔懒人沙发" > 
+													<div class="newPro_first">
+														<img src="../images/home/01.png" alt="#"/>
+													</div>
+												</a>
+											</div>
+											<div class="bd">
+												
+												li的上部结构完成，下部结构在这里写      样式都没给
+												
+												
+											</div>
+										</div>
+									</li>
+								</div>
+							</div>
+							<span class="leftBtn"><i class="iconfont icon-back"></i></span>
+							<span class="rightBtn"><i class="iconfont icon-more"></i></span>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>-->
+		<!--公共底部-->
+		<div id="foot">
+			<div class="foot">
+				<div class="ft1">
+					<div class="row">
+						<div class="row_item">
+							<div class="serviceTel">
+								<h4 class="khfuwu">客户服务</h4>
+								<a href="javascript:;" class="kefuBtn">
+									<i class="iconfont icon-zaixiankefu1"></i>
+									<div>在线客服</div>
+								</a>
+								<a href="javascript:;" class="feedBackBtn">
+									<i class="iconfont icon-zaixiankefu1"></i>
+									<div>用户反映</div>
+								</a>
+							</div>
+						</div>
+						<div class="row_item">
+							<div class="whatIsYX">
+								<h4>何为严选</h4>
+								<p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+							</div>
+							<div class="followUs">
+								<p class="ft_title">关注我们：</p>
+								<div class="fUsList">
+									<div class="q">
+										<img src="../images/q.png" alt="" />
+										<div class="q_erweima">
+											<div class="q_erweima_box">
+												<img src="../images/q_erweima.png" alt="" />
+											</div>
+										</div>
+									</div>
+									<div class="wechat">
+										<img src="../images/wechat.png" alt="" />
+										<div class="wechat_erweima">
+											<div class="q_erweima_box">
+												<img src="../images/wechat_erweima.png" alt="" />
+											</div>
+										</div>
+									</div>
+									<a href="javascript:;" class="xlwb">
+										<img src="../images/xlwb.png" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row_item">
+							<div class="appDownload">
+								<h4>扫码下载严选</h4>
+								<div class="footQRcode">
+									<img src="../images/client_QR code.png" alt="#" style="width: 104px;height: 104px;"></img>
+								</div>
+								<div class="app_tip">下载领1000元新人礼包</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ft2">
+					<div class="row">
+						<ul class="siteEnsure">
+							<li class="ft_item">
+								<div class="ft_inner">
+									<img src="../images/30day.png" alt="#" />
+									<p class="ft_inner_text">30天无忧退换货</p>
+								</div>
+							</li>
+							<li class="ft_item">
+								<div class="ft_inner">
+									<img src="../images/30day.png" alt="#" />
+									<p class="ft_inner_text">满88元免邮费</p>
+								</div>
+							</li>
+							<li class="ft_item">
+								<div class="ft_inner">
+									<img src="../images/30day.png" alt="#" />
+									<p class="ft_inner_text">网易品质保证</p>
+								</div>
+							</li>
+						</ul>
+						<div class="hr"></div>
+						<div class="siteInfo">
+							<div class="ft_nav">
+								<a href="javascript:;" class="ft_nav_text">关于我们</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">帮助中心</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">售后服务</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">配送与验收</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">商务合作</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">企业采购</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">开放平台</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">搜索推荐</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">友情链接</a>
+							</div>
+							<p class="ft_copyright">
+								<span>网易公司版权所有</span>
+								<span>2017</span>
+								<span>&nbsp; 食品经营许可证：JY123456789012</span>
+							</p>
+							<a href="javascript:;" class="ft_busiAdmin">
+								<img src="../images/gongshang.gif" alt="#" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
 <script src="../jquery-3.1.1.min.js"></script>
 <script src="../js/header.js"></script>
 <script src="../js/index.js"></script>
+<script src="../js/foot.js"></script>

@@ -1,0 +1,150 @@
+#main *{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#main_con{width:1090px;margin: 0 auto;}
+.location{font-size: 12px;color: #333;line-height: 1;padding-top: 20px;padding-bottom: 20px;}
+.loca_icon{margin: 0 7px;height: 11px;width:5px;font-size: 16px!important;}
+.location a:hover{text-decoration: underline;}
+.detail{padding: 0 0 80px;}
+/*详细信息*/
+
+	/*左边图片*/
+.hd_left{float: left;width: 524px;overflow: hidden;}
+.view{float: left;width: 430px;height: 430px;border: 1px solid #e8e8e8;margin-right: 16px;position: relative;}
+.view img{display: block;width: 428px;height: 428px;background-color:#f4f4f4 ;}
+.list{float: right;overflow: hidden;position: relative;}
+.list li{zoom: 1;width: 78px;height: 78px;overflow: hidden;margin-bottom: 10px;vertical-align: top;position: relative;}
+.list li a{display: block;width: 78px;height: 78px;border: 1px solid #e8e8e8;}
+.list li a img{display: block;width: 100%;height: 100%;background-color: #f4f4f4;}
+.z_active{border: 2px solid #A88049;}
+	/*右边信息*/
+.hd_right{float: right;width: 566px;padding-left: 62px;word-break: break-all;word-wrap: break-word;}
+.intro{overflow: hidden;margin-bottom: 20px;}
+.intro .name{float: left;font-size: 20px;font-weight: 700;line-height: 20px;margin-bottom: 7px;}
+.intro .detailTag{float: left;}
+.intro .manufacTag{float: left;padding: 0 10px;line-height: 20px;text-align: center;font-size: 12px;border: 1px solid rgba(180,160,120,.3);background: #F5F3EF;color: #B19e7a;margin-left: 12px;}
+.intro .hotTag{background-color: #f48f18;border: 1px solid rgba(244,143,24,.3);line-height: 18px;float: left;margin-left: 10px;display: inline-block;height: 20px;color: #fff;padding: 0 5px;font-size: 12px;}
+.intro .desc{width: 300px;font-size: 12px;padding-top: 13px;line-height: 18px;color: #999;clear: both;}
+.hd_right .price{background-color:#f5f3ef;border-top: 1px dotted #dedede;border-bottom: 1px dotted #DEDEDE;padding:0 0 13px;line-height: 24px;font-size: 13px;position: relative;}
+.price .pBox{height: 45px;margin-bottom: 5px;overflow: hidden;}
+.hd_right .field{margin-bottom: 3px;}
+.f-cb{zoom: 1;}
+.hd_right .getCoupon{overflow: hidden;}
+.hd_right .sale{margin-top: 2px;}
+.hd_right .price .server{margin-top: 1px;height: 40px;}
+.comment{display: inline-block;position: absolute;top: 10px;right: 12px;line-height: 1.2;text-align: center;z-index: 1;}
+.f-fz18{font-size: 18px;}
+.f-fz13{font-size: 13px;}
+.label{width: 55px;font-size: 13px;float: left;color: #666;margin-left: 10px;}
+.label-1{line-height: 30px;margin-top: 16px;}
+.label-2{line-height: 28px;}
+.rp{font-size:18px;font-weight: 700;margin-top: 13px;margin-right: 1px;margin-left: 0;height: 30px;float: left;}
+.rp .rmb{margin-left: 0;line-height: 30px;color: #D7282d;font-size: 18px;}
+.rp .num{font-size: 28px;line-height: 30px;margin-left: 2px;color: #d7282d;}
+.coupons{margin-left: 57px;}
+.coupon{float: left;font-size: 13px;color: #d52b33;height:18px;line-height: 17px;margin: 5px 10px 5px 0;position: relative;background: #fff;padding: 0 4px;border: 1px solid #D52B33;}
+.couponOffHand{line-height: 28px;color: #D52B33;}
+.f-left{float: left;}
+.saleLine{margin-left: 65px;height: 28px;}
+.link{color: #D52B33;}
+.link:hover span{text-decoration: underline;}
+.activityType{position: relative;margin-left: 10px;font-size: 12px;left: 0;top: -1px;display: inline-block;height: 20px;line-height: 20px;color: #fff;padding: 0 5px;background: #E36844;}
+.pointCt{color:#666;}
+.policyBox{margin-left: 65px;padding-top:2px;line-height: 20px;color: #666;}
+.sItem{float: left;cursor: pointer;}
+.policyBox:hover div{text-decoration: underline;}
+.m-parampicker{margin-left: 10px;}
+.specProp{margin-top: 10px;position: relative;line-height: 1;}
+.type{float: left;font-size: 12px;color: #666;width: 54px;}
+.type-1{line-height: 30px;}
+.cont{position: relative;width: 438px;float: left;}
+.tab_con{float: left;position: relative;margin-right: 10px;margin-bottom: 15px;vertical-align: middle;padding: 1px;}
+.tab{border: 1px solid #ddd;float: left;cursor: pointer;position: relative;}
+.tab_txt{padding: 0 25px;line-height: 28px;font-size: 12px;overflow: hidden;color: #333;}
+.tab_sel{border: 2px solid #B4A078;color: #333;margin: -1px;}/*添加给被选中的尺寸*/
+.number{margin-top: 10px;margin-left: 10px;}
+.u-formctr .name{float: left;font-size: 12px;color: #666;width: 54px;white-space: normal;}
+.u-formctr .name-1{line-height: 30px;}
+.u-selnum{border: 1px solid #ddd;overflow: hidden;display:inline-block}
+.u-selnum .z-dis{cursor: not-allowed;}
+.u-selnum input.dis{border-radius: 0;border: 0;width: 60px;margin: 0;font-size: 12px;text-align: center;color: #ccc;position: relative;float: left;height: 30px;line-height: 28px;background: #fff;}
+.u-selnum span{text-align: center;vertical-align: middle;position: relative;float: left;width: 36px;height: 30px;line-height: 28px;}
+.u-selnum .less{border-right: 1px solid #ddd;}
+.u-selnum .more{border-left: 1px solid #ddd;}
+.btns{margin-left: 12px;margin-top: 30px;font-size: 0;}
+.btns .btn{margin-right: 10px;}
+.w-button{-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;width: 96px;height: 28px;padding: 0;letter-spacing: normal;line-height: 26px;font-size: 12px;text-align: center;color: #333;border: 1px solid #ccc;background-color: #f5f5f5;cursor: pointer;vertical-align: middle;display: inline-block;overflow: hidden;word-spacing: normal;}
+.w-button-xl{width: 168px;height: 50px;line-height: 50px;font-size: 18px;}
+.w-button-ghost{color: #b4a078;border: 1px solid #b4a078;background-color: #f5f3ef;}
+.w-button-primary{color: #fff;border: 1px solid #b4a078;background-color: #b4a078;}
+.cart-detail{margin-left: 12px 18px 0 0;background-position: 0 -66px;height: 21px;width: 21px;font-size: 20px!important;line-height: 21px;}
+.btns .w-button-ghost:hover{background: #fff;}
+.btns .w-button-primary:hover{opacity: .8;}
+.btns .w-collectZone{position: relative;display: inline-block;height: 49px;width: 50px;border: 1px solid #CCC;overflow: hidden;vertical-align: middle;text-align: center;cursor: pointer;}
+.btns .top{position: relative;overflow: hidden;height: 24px;}
+.btns .bottom{height: 23px;font-size: 13px;line-height: 23px;color: #999;}
+.btns .shoucang{margin-top: 6px;background-position: 0 -594px;height: 15px;width: 16px;font-size: 16px!important;text-align: center;vertical-align: middle;color: #D7CCB6;}
+
+/*大家都在看*/
+.correlation{width: 100%;overflow: hidden;margin-top: 22px;border: 1px solid #E8E8E8;}
+.w-promHd{height: 44px;line-height: 44px;font-size: 17px;position: relative;background-color: #f5f5f5;}
+.w-promHd .promTabItem{display: none;text-indent: 18px;background-color: #f5f5f5;}
+.w-promHd .show{display: inline-block;}
+.rightPad{overflow: hidden;height: 100%;background-color: #f5f5f5;border-bottom: 1px solid #e8e8e8;display: none;}
+.promCt{overflow: hidden;position: relative;height: 311px;}
+.promCt .promItem{display: none;position: absolute;width: 100%;overflow: hidden;}
+.promCt .show{display: block;}
+.m-recommend{overflow: hidden;}
+.recommend-wrap{overflow: hidden;position: relative;width: 100%;}
+.recommend-content{overflow: hidden;position: relative;margin: 12px 79px 0;height: 299px;}
+.rec-leftBtn{height: 30px;width: 30px;margin-top: -16px;position: absolute;top: 50%;left: 26px;display: block;overflow: hidden;background: #E7E2D7;border-radius: 15px;}
+.rec-rightBtn{height: 30px;width: 30px;margin-top:-16px;position: absolute;top: 50%;right: 26px;display: block;cursor: pointer;overflow: hidden;background: #E7E2D7;border-radius: 15px;}
+.recommend-wrap i{font-size: 28px!important;vertical-align: middle;text-align: center;color: #fff;}
+.recommend-list{margin-left: -30px;position: relative;display: block;}
+.slick-list{z-index: 0;overflow: hidden;margin: 0;padding: 0;position: relative;display: block;}
+.slick-track{position: relative;display: block;top: 0;left: 0;}
+.recommend-list li{overflow: hidden;width: 210px;text-align: center;float: left;margin-left: 30px;}
+.slick-slide{display: block;width: 210px;overflow: hidden;text-align: center;float: left;margin-left: 30px;}
+.m-product{width: 210px;line-height: 1;text-align: center;font-size: 13px;height: 361px;position: relative;}
+.recommend-list .hd{margin-bottom: 18px;position: relative;overflow: hidden;}
+.recommend-list .hd a{width: 100%;height: 100%;}
+.recommend-list .hd img{width: 210px;height: 210px;display: block;margin: 0 auto;color: #f4f4f4;border: 1px solid transparent;transition:1s ;background: 0 0;}
+.prdtTags{height: 20px;font-size: 0;color: #fff;width: 200px;margin: 0 auto 3px;overflow: hidden;}
+.recommend-list .bd .name{margin-bottom: 6px;padding: 0 10px;height: 20px;line-height: 20px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.recommend-list .bd .price{color: #d4282d;text-align: center;}
+
+/*详情+评价*/
+.detailBd{margin-top: 20px;}
+	/*左边*/
+.detailBd .left{float: left;width: 750px;margin-right: 40px;}
+.detailBd .nav{position: relative;border-left: 1px solid #e8e8e8;}
+.detailBd .left .nav .item{position: relative;z-index: 1;float: left;width: 170px;text-align: center;border: 1px solid #e8e8e8;border-left: none;height: 42px;}
+.detailBd .left .nav .item-active{border-top: 3px solid #b4a078;background-color: #fff;border-bottom: 1px solid #fff;color: #b4a078;}
+.detailBd .left .nav .bg{position: absolute;left: 0;width: 100%;border: 1px solid #e8e8e8;border-left: none;background-color: #f5f5f5;height: 42px;}
+.detailBd .left .nav .item a{display: block;line-height: 40px;font-size: 14px;}
+.detailBd .left .nav .item .num{color: #b4a078;}
+
+
+.m-detailHtml{padding-top: 30px;}
+.m-detailHtml .detailImg{width: 100%;height: auto!important;vertical-align: top;}
+
+
+
+
+
+
+
+
+	/*右边*/
+.detailBd .right{float: left;width: 300px;}
+.detailBd .right .m-hotSell{border: 1px solid #e8e8e8;margin-bottom: 20px;}
+.m-hotSell .hd{line-height: 41px;background-color: #f5f5f5;font-size: 18px;text-align: center;font-weight: 700;border-bottom: 1px solid #e8e8e8;display: block;}
+.m-hotSell .item{margin-top: 24px;margin-left: 24px;margin-right: 24px;border-bottom: 1px solid #e8e8e8;}
+.m-hotSell .item .img-wrap{position: relative;width: 250px;height: 250px;overflow: hidden;}
+.m-hotSell .item .img-wrap img{transition:1s;}
+.m-hotSell .content{position: relative;z-index: 1;padding: 0 5px 18px;}
+.m-hotSell .content .title{margin-bottom: 8px;text-align: center;}
+.m-hotSell .content .title .name{display: inline-block;font-size: 14px;line-height: 1;max-width: 156px;text-align: left;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}

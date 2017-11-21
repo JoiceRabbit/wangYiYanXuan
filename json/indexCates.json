@@ -1,0 +1,67 @@
+{
+	"jujia" :[
+		{
+			"id" : "01",
+			"src" : "home/01big.jpg",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "02",
+			"src" : "home/01.png",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "03",
+			"src" : "home/02.png",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "04",
+			"src" : "home/03.png",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "01",
+			"src" : "home/04.jpg",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		}
+	],
+	"kitchen" :[
+		{
+			"id" : "01",
+			"src" : "kitchen/01big.jpg",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "02",
+			"src" : "kitchen/01.png",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "03",
+			"src" : "kitchen/02.png",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "04",
+			"src" : "kitchen/03.png",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		},
+		{
+			"id" : "01",
+			"src" : "kitchen/04.png",
+			"name" : "MA-1棒球领飞行棉服夹克",
+			"price" : "￥499.00"
+		}
+	]
+
+}
