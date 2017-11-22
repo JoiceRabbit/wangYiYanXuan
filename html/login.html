@@ -3,7 +3,955 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>登录</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<link rel="stylesheet" href="../css/foot.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/login.css" />
 	</head>
 	<body>
+		<!--top+搜索框+导航-->
+		<div id="header">
+			<div id="top">
+				<div id="top_con">
+					<a href="jujia.html" class="top_slogan">好的生活，没那么贵</a>   <!--跳转向品牌故事，选做-->
+					<ul class="top_nav">
+						<li>
+							<a href="login.html" class="top_con_login">登录</a>
+							<a href="register.html">注册</a>
+						</li>
+						<li>
+							<a href="jujia.html">消息</a>
+						</li>
+						<li>
+							<a href="jujia.html">我的订单</a>
+						</li>
+						<li>
+							<a href="jujia.html">严选会员</a>
+						</li>
+						<li>
+							<a href="jujia.html">企业采购</a>
+						</li>
+						<li id="kefuLi">
+							<a href="jujia.html" class="kefu">客户服务
+								<i class="iconfont icon-jiantoushang"></i>
+							</a>
+							<ul class="kefu_erji">
+								<li><a href="jujia.html">在线客服</a></li>
+								<li><a href="jujia.html">帮助中心</a></li>
+								<li><a href="jujia.html">商务合作</a></li>
+								<li><a href="jujia.html">开放平台</a></li>
+							</ul>
+						</li>
+						<li class="top_nav_last">
+							<a href="jujia.html"><i class="iconfont icon-shouji"></i>下载APP</a>
+							<img src="../images/client_QR code.png" alt="扫二维码，下载客户端" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="logo">
+				<div id="logo_con">
+					<a href="jujia.html" title="网易严选" alt="" class="logo_left">
+						<img src="../images/logo.jpg" alt="" />
+					</a>
+					<div class="logo_right">
+						<input type="text" placeholder="选你所爱..."/>
+						<div class="logo_right_history" style="z-index: 30;">
+							   <!--删除历史记录 定位  点击-->
+							<div class="recent">
+								<p class="logo_right_title">最近搜索
+									<i class="iconfont icon-shanchu logo_Right_delBtn"></i>
+								</p>
+								<li class="history"></li>
+							</div>
+							<div class="hot">
+								<p class="logo_right_title">大家都在搜</p>
+								<li>抢全场每满100减20</li>
+								<li>双11同价福利</li>
+								<li>四件套</li>
+								<li>女鞋</li>
+							</div>
+						</div>
+						<a href="jujia.html" class="logo_sousuo"><i class="iconfont icon-sousuo"></i></a>
+						<a href="cart.html" class="logo_cart">
+							<i class="iconfont icon-caigou-xianxing">
+								<em class="cart_count">0</em>
+							</i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="nav" style="z-index: 9;" >
+				<div id="nav_con">
+					<ul class="nav_ul">
+						<li>
+							<a href="index.html">首页</a>
+							<i class="xiaotiao"></i>
+						</li>
+						<li>
+							<a href="jujia.html">居家</a>
+							<ul>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">餐厨</a>
+							<ul>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-09 ziti"></i>
+										<span>杯壶</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-chuju ziti"></i>
+										<span>锅具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-canju ziti"></i>
+										<span>餐具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-chuju ziti"></i>
+										<span>功能厨具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-kafeihuchahu ziti"></i>
+										<span>茶具咖啡具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-qingjie ziti"></i>
+										<span>清洁保鲜</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-shiwuqimin ziti"></i>
+										<span>刀剪砧板</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">配件</a>
+							<ul>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-jiaqi ziti"></i>
+										<span>行李箱</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-gongnengxiangbao ziti"></i>
+										<span>功能箱包</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-shuangjianbao ziti"></i>
+										<span>双肩包</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-Dxiangbao-danjianbao ziti"></i>
+										<span>单肩包</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-dfdf05-copy ziti"></i>
+										<span>男鞋</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-nvxie ziti"></i>
+										<span>女鞋</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-peishixiangbaoxiexue ziti"></i>
+										<span>鞋配</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-tuoxie ziti"></i>
+										<span>拖鞋</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-weijinzhuanhuan ziti"></i>
+										<span>围巾件套</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-peishi ziti"></i>
+										<span>配饰</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-yanjing ziti"></i>
+										<span>眼镜</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">服装</a>
+							<ul>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">电器</a>
+							<ul>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">洗护</a>
+							<ul>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">杂货</a>
+							<ul>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">饮食</a>
+							<ul>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">婴童</a>
+							<ul>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">志趣</a>
+							<ul>
+								<li>
+									<a href="jujia.html" class="xiangmu">
+										<i class="iconfont icon-zhentou ziti"></i>
+										<span>被枕</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-chuangpintaojian ziti"></i>
+										<span>床品件套</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-jiaju ziti"></i>
+										<span>家具</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Friyongbaihuo-shouna ziti"></i>
+										<span>收纳</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-tub2 ziti"></i>
+										<span>布艺软装</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu">
+										<i class="iconfont icon-Hjiafangjiashi-jiazhuangruanshi ziti"></i>
+										<span>家饰</span>
+									</a>
+								</li>
+								<li>
+									<a href='jujia.html' class="xiangmu"><i class="iconfont icon-chongwu ziti"></i>
+										<span>宠物</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">为你严选</a>
+							<ul>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-09 ziti"></i>
+										<span>杯壶</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-guoju ziti"></i>
+										<span>锅具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-chuju ziti"></i>
+										<span>餐具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-chuju ziti"></i>
+										<span>功能厨具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-kafeihuchahu ziti"></i>
+										<span>茶具咖啡具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-qingjie ziti"></i>
+										<span>清洁保鲜</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-shiwuqimin ziti"></i>
+										<span>刀剪砧板</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-qingjie ziti"></i>
+										<span>清洁保鲜</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-shiwuqimin ziti"></i>
+										<span>刀剪砧板</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-qingjie ziti"></i>
+										<span>清洁保鲜</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-shiwuqimin ziti"></i>
+										<span>刀剪砧板</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="jujia.html">甄选家</a>
+							<ul>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-09 ziti"></i>
+										<span>杯壶</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-guoju ziti"></i>
+										<span>锅具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-chuju ziti"></i>
+										<span>餐具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-chuju ziti"></i>
+										<span>功能厨具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-kafeihuchahu ziti"></i>
+										<span>茶具咖啡具</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-qingjie ziti"></i>
+										<span>清洁保鲜</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-shiwuqimin ziti"></i>
+										<span>刀剪砧板</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-qingjie ziti"></i>
+										<span>清洁保鲜</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="xiangmu">
+										<i class="iconfont icon-shiwuqimin ziti"></i>
+										<span>刀剪砧板</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="nav_bg" style="z-index: 9;"></div>   <!--二级菜单的背景-->
+			</div>
+		</div>
+		<!--右侧边固定栏-->
+		<div id="besideR">
+			<a href="#">
+				<img src="../images/ceBian.gif" alt="#" class="ceBian"/>
+			</a>
+			<div class="gift">
+				<a href="#">
+					<i class="iconfont icon-liwu"></i>
+					<span>新人有礼</span>
+				</a>
+			</div>
+			<div class="app">
+				<a href="#">
+					<i class="iconfont icon-shouji"></i>
+					<span>下载APP</span>
+				</a>
+				<img src="../images/saoma.jpg" alt="" />
+			</div>
+			<div class="online_kefu">
+				<a href="#">
+					<i class="iconfont icon-zaixiankefu1"></i>
+					<span>在线客服</span>
+				</a>
+			</div>
+			<div class="backTop">
+				<a href="#">
+					<i class="iconfont icon-jiantoushang"></i>
+					<span>回顶部</span>
+				</a>
+			</div>
+		</div>
+		<!--登录-->
+		<div id="main">
+			<div class="main_bg" style="background: url(../images/loginbg.jpg);">
+				<div class="g-row">
+					<div class="login_Page" style="display: block;">
+						<div id="loginForm" style="width: 304px;height:340px;">
+							<div class="m-header">
+								<div class="headimg j-headimg">网易账号登录</div>
+							</div>
+							<div class="m-cnt">
+								<form id="login-form">
+									<div class="m-container">
+										<div class="inputbox" id="account-box" style="z-index: 1;">
+											<div class="u-logo">
+												<div class="u-logo-img1"></div>
+											</div>
+											<div class="u-input box">
+												<input type="text" name="email" placeholder="邮箱账号" id="loginAccount"/>
+											</div>
+										</div>
+										<div class="inputbox" id="pwd-box">
+											<div class="u-logo">
+												<div class="u-logo-img2"></div>
+											</div>
+											<div class="u-input box">
+												<input type="text" name="password" placeholder="请输入密码" id="loginPwd"/>
+											</div>
+										</div>
+										<div class="m-err" id="err">
+											<div class="errhead">账号或密码错误</div>
+										</div>
+										<div class="f-cb loginbox">
+											<a href="javascript:;" class="uloginbtn">登&nbsp;&nbsp;录</a>
+										</div>
+										<div class="m-unlogin">
+											<div class="b-unlogin"></div>
+											<a href="javascript:;" class="forgetpwd">忘记密码?</a>
+											<a href="register.html" class="u-regbtn">去注册</a>
+										</div>
+										<div class="m-ologin"></div>
+									</div>
+								</form>
+							</div>
+							<div class="m-sep"></div>
+							<div class="m-footer"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--公共底部-->
+		<div id="foot">
+			<div class="foot">
+				<div class="ft1">
+					<div class="row">
+						<div class="row_item">
+							<div class="serviceTel">
+								<h4 class="khfuwu">客户服务</h4>
+								<a href="javascript:;" class="kefuBtn">
+									<i class="iconfont icon-zaixiankefu1"></i>
+									<div>在线客服</div>
+								</a>
+								<a href="javascript:;" class="feedBackBtn">
+									<i class="iconfont icon-zaixiankefu1"></i>
+									<div>用户反映</div>
+								</a>
+							</div>
+						</div>
+						<div class="row_item">
+							<div class="whatIsYX">
+								<h4>何为严选</h4>
+								<p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+							</div>
+							<div class="followUs">
+								<p class="ft_title">关注我们：</p>
+								<div class="fUsList">
+									<div class="q">
+										<img src="../images/q.png" alt="" />
+										<div class="q_erweima">
+											<div class="q_erweima_box">
+												<img src="../images/q_erweima.png" alt="" />
+											</div>
+										</div>
+									</div>
+									<div class="wechat">
+										<img src="../images/wechat.png" alt="" />
+										<div class="wechat_erweima">
+											<div class="q_erweima_box">
+												<img src="../images/wechat_erweima.png" alt="" />
+											</div>
+										</div>
+									</div>
+									<a href="javascript:;" class="xlwb">
+										<img src="../images/xlwb.png" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row_item">
+							<div class="appDownload">
+								<h4>扫码下载严选</h4>
+								<div class="footQRcode">
+									<img src="../images/client_QR code.png" alt="#" style="width: 104px;height: 104px;"></img>
+								</div>
+								<div class="app_tip">下载领1000元新人礼包</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ft2">
+					<div class="row">
+						<ul class="siteEnsure">
+							<li class="ft_item">
+								<div class="ft_inner">
+									<img src="../images/30day.png" alt="#" />
+									<p class="ft_inner_text">30天无忧退换货</p>
+								</div>
+							</li>
+							<li class="ft_item">
+								<div class="ft_inner">
+									<img src="../images/30day.png" alt="#" />
+									<p class="ft_inner_text">满88元免邮费</p>
+								</div>
+							</li>
+							<li class="ft_item">
+								<div class="ft_inner">
+									<img src="../images/30day.png" alt="#" />
+									<p class="ft_inner_text">网易品质保证</p>
+								</div>
+							</li>
+						</ul>
+						<div class="hr"></div>
+						<div class="siteInfo">
+							<div class="ft_nav">
+								<a href="javascript:;" class="ft_nav_text">关于我们</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">帮助中心</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">售后服务</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">配送与验收</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">商务合作</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">企业采购</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">开放平台</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">搜索推荐</a>
+								<b class="ft_nav_split">|</b>
+								<a href="javascript:;" class="ft_nav_text">友情链接</a>
+							</div>
+							<p class="ft_copyright">
+								<span>网易公司版权所有</span>
+								<span>2017</span>
+								<span>&nbsp; 食品经营许可证：JY123456789012</span>
+							</p>
+							<a href="javascript:;" class="ft_busiAdmin">
+								<img src="../images/gongshang.gif" alt="#" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
+<script src="../jquery-3.1.1.min.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/foot.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/cookie.js"></script>

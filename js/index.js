@@ -1,4 +1,13 @@
 $(function(){
+	
+	var idArr = getCookie("userlist");
+	if(idArr.length>0){
+		var str = idArr[idArr.length-1].pid;
+		console.log(str)
+		$(".userid").html(str).show().siblings().hide();
+	}
+	
+	
 	$("#nav_con .nav_ul li:first").mouseleave(function(){
 		$("#nav_con .nav_ul li:first a").css({"color":"#b4a078"});
 		$oI = $("<i class='xiaotiao'></i>").css({

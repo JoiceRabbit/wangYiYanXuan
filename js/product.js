@@ -3,10 +3,7 @@ $(function(){
 	show();
 	//大家都在看
 	allSee();
-	
-	
-	
-	
+
 	//、、、、、、、、、、、、、、、、、、、、、、、、、、、、功能封装、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、
 	
  		
@@ -224,6 +221,7 @@ $(function(){
 				proImgs(json,jsonIndex);
 				//选择商品尺寸和数量
 				choose();
+				
 			}
 		});
 	}
@@ -245,12 +243,32 @@ $(function(){
 			$(this).addClass("tab_sel").parent().siblings().find("a").removeClass("tab_sel");
 			$(".u-selnum input").removeAttr("disabled");
 			$(".u-selnum span").eq(1).css("cursor","pointer");
-			if($(".u-selnum input").val() > 1){
-				$(".u-selnum span").eq(0).css("cursor","pointer");
-			}
+			
+			//加减数量
+			proCount();
 		})
 	}
 	
+	
+	//商品数量变化
+	function proCount(){
+		$(".u-selnum .less").click(function(){
+			var cou = parseInt($(".u-selnum input").val());
+			if(cou>1){
+				$(".u-selnum input").val(cou-1);
+			}
+			if(cou = 1){
+				$(".u-selnum span").eq(0).css("cursor","not-allowed");
+			}
+		})
+		$(".u-selnum .more").click(function(){
+			var cou = parseInt($(".u-selnum input").val());
+			console.log($(".u-selnum input").val())
+			$(".u-selnum input").val(cou+1);
+			$(".u-selnum span").eq(0).css("cursor","pointer");
+		})
+		
+	}
 	
 	//大家都在看部分
 	function allSee(){
